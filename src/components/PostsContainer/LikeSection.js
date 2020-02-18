@@ -4,16 +4,16 @@
 import React from "react";
 
 const LikeSection = props => {
+  // console.log(props)
   return (
     <div>
     <div
       className="like-section"
       key="likes-icons-container"
-      // Added Event Listener that will increase like
-      // By one per click
-      onClick={props.incrementLike}
     >
-      <div className="like-section-wrapper">
+      <div // Added Event Listener that will increase likes per click
+      onClick={props.incrementLike} 
+      className="like-section-wrapper">
         <i className="far fa-heart" />
       </div>
       <div className="like-section-wrapper">

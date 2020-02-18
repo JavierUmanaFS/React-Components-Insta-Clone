@@ -12,14 +12,14 @@ const PostsPage = () => {
   // Moved dummyData Array/Obj into Posts 
   const [posts] = useState(dummyData);
   // set up state for your data
-  console.log(posts)
+  // console.log(posts)
   return (
     <div className="posts-container-wrapper">
     {/* Mapping new Array of posts */}
      {posts.map(e =>( 
         <Post key={e.username} igPost={e} />
       ))}
-      {/* Giving Post.js props from Parent
+      {/* Giving Post file props from Parent,
           Keys help react identify which items have changed  */}
     </div>
   );

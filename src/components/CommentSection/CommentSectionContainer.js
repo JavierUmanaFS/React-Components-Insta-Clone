@@ -6,6 +6,8 @@ import "./Comment.css";
 import { createPortal } from "react-dom";
 
 const CommentSection = props => {
+ //console.log(props)
+ 
   // Add state for the comments
   const [comments]= useState(props.comments)
 

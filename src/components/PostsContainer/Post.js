@@ -9,7 +9,7 @@ import "./Posts.css";
 
 // pass props in this file to
 const Post = props => {
-
+console.log(props)
   // Passing props into this file 
   const [likes, setLikes] = useState(props.igPost.likes);
 
