@@ -9,6 +9,9 @@ const LikeSection = props => {
     <div
       className="like-section"
       key="likes-icons-container"
+      // Added Event Listener that will increase like
+      // By one per click
+      onClick={props.incrementLike}
     >
       <div className="like-section-wrapper">
         <i className="far fa-heart" />
@@ -17,9 +20,8 @@ const LikeSection = props => {
         <i className="far fa-comment" />
       </div>
     </div>
-    <p className="like-number">
-      
-      likes</p>
+    {/* Replaced hard coded like # with dynamic like # */}
+    <p className="like-number"> { props.likes } likes </p>
 </div>
   )
 };
