@@ -13,7 +13,8 @@ const CommentSection = props => {
 
   return (
     <div>
-      {/* Passing new mapped array containing comments to Comment file */}
+       {/* map through the comments data and return the Comment component */}
+      {/* Passing new mapped array containing comments to Comment file */}  
       {comments.map((comment, index) =>
       <Comment key={index} comment={comment}  />)} 
       <CommentInput /> 

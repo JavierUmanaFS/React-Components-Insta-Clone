@@ -15,7 +15,7 @@ const PostsPage = () => {
   // console.log(posts)
   return (
     <div className="posts-container-wrapper">
-    {/* Mapping new Array of posts */}
+    {/* map through data here to return a Post and pass data as props to Post */}
      {posts.map(e =>( 
         <Post key={e.username} igPost={e} />
       ))}
